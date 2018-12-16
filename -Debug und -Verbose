@@ -1,0 +1,12 @@
+[cmdletbinding()]
+param ()
+
+if ($PSCmdlet.MyInvocation.BoundParameters["Debug"].IsPresent) {
+    Write-Host "Debug"
+}
+
+if ($PSCmdlet.MyInvocation.BoundParameters["Verbose"].IsPresent) {
+    Write-Host "Verbose"
+}
+Write-Debug "Echter Debugtext"
+Write-Verbose "Echter Verbosekram"
